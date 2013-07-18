@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ChipObject">
+      <UniqueIdentifier>{004f89cd-3c65-45c5-b348-c301db2ba1e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NetworkCommunication">
+      <UniqueIdentifier>{d15aaeac-ecc4-4d66-aa76-dcb8294f3acb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WPILib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RobotBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TYPEDEF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sysLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taskLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unistd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\NiRio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="semLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Synchronized.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Watchdog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SensorBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericHID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverStation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dashboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DashboardBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="errorbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\NiFpga.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tAccumulator.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tAI.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tAlarm.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tAnalogTrigger.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tCounter.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tDIO.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tDMA.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tDMAManager.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tEncoder.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tGlobal.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tInterrupt.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tInterruptManager.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tSolenoid.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tSPI.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tSystem.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tSystemInterface.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\tWatchdog.h">
+      <Filter>Header Files\ChipObject</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkCommunication\AICalibration.h">
+      <Filter>Header Files\NetworkCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkCommunication\FRCComm.h">
+      <Filter>Header Files\NetworkCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkCommunication\LoadOut.h">
+      <Filter>Header Files\NetworkCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkCommunication\symModuleLink.h">
+      <Filter>Header Files\NetworkCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkCommunication\UsageReporting.h">
+      <Filter>Header Files\NetworkCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalogChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PIDSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorSafetyHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WPIErrors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverStationEnhancedIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FRCComm.cpp">
+      <Filter>Header Files\NetworkCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorSafety.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalogModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NotSupportedException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitalModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="I2C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PWM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverStationInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="semLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Synchronized.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Watchdog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RobotBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverStation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SensorBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dashboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorSafetyHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalogChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalogModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitalModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverStationEnhancedIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverStationInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="license-README.txt" />
+  </ItemGroup>
+</Project>
