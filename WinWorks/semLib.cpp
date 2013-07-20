@@ -15,9 +15,9 @@
 
 SEM_ID semCCreate(int initialCount)
 {
-	SEM_ID sem = new semaphore();
+	SEM_ID sem = new WINWORKS_SEMLIB_semaphore();
 
-	sem->type = semaphore::CSEMAPHORE;
+	sem->type = WINWORKS_SEMLIB_semaphore::CSEMAPHORE;
 	sem->intern_mutex = NULL;
 	sem->intern_semaphore = new boost::interprocess::interprocess_semaphore(initialCount);
 
@@ -26,9 +26,9 @@ SEM_ID semCCreate(int initialCount)
 
 SEM_ID semMCreate(int options)
 {
-	SEM_ID sem = new semaphore();
+	SEM_ID sem = new WINWORKS_SEMLIB_semaphore();
 
-	sem->type = semaphore::MUTEX;
+	sem->type = WINWORKS_SEMLIB_semaphore::MUTEX;
 	sem->intern_mutex = new boost::interprocess::interprocess_recursive_mutex();
 	sem->intern_semaphore = NULL;
 
@@ -37,9 +37,9 @@ SEM_ID semMCreate(int options)
 
 SEM_ID semBCreate(int options, SEM_B_STATE initialState)
 {
-	SEM_ID sem = new semaphore();
+	SEM_ID sem = new WINWORKS_SEMLIB_semaphore();
 
-	sem->type = semaphore::BSEMAPHORE;
+	sem->type = WINWORKS_SEMLIB_semaphore::BSEMAPHORE;
 	sem->intern_mutex = NULL;
 	sem->intern_semaphore = new boost::interprocess::interprocess_semaphore(initialState);
 
@@ -52,13 +52,13 @@ STATUS semGive(SEM_ID sem)
 	{
 		switch(sem->type)
 		{
-		case semaphore::CSEMAPHORE:
+		case WINWORKS_SEMLIB_semaphore::CSEMAPHORE:
 			sem->intern_semaphore->post();
 			break;
-		case semaphore::BSEMAPHORE:
+		case WINWORKS_SEMLIB_semaphore::BSEMAPHORE:
 			sem->intern_semaphore->post();
 			break;
-		case semaphore::MUTEX:
+		case WINWORKS_SEMLIB_semaphore::MUTEX:
 			sem->intern_mutex->unlock();
 			break;
 		}
@@ -79,13 +79,13 @@ STATUS semTake(SEM_ID sem, int ticks)
 		{
 			switch(sem->type)
 			{
-			case semaphore::CSEMAPHORE:
+			case WINWORKS_SEMLIB_semaphore::CSEMAPHORE:
 				sem->intern_semaphore->wait();
 					break;
-			case semaphore::BSEMAPHORE:
+			case WINWORKS_SEMLIB_semaphore::BSEMAPHORE:
 				sem->intern_semaphore->wait();
 				break;
-			case semaphore::MUTEX:
+			case WINWORKS_SEMLIB_semaphore::MUTEX:
 				sem->intern_mutex->lock();
 				break;
 			}
@@ -97,13 +97,13 @@ STATUS semTake(SEM_ID sem, int ticks)
 
 			switch(sem->type)
 			{
-			case semaphore::CSEMAPHORE:
+			case WINWORKS_SEMLIB_semaphore::CSEMAPHORE:
 				sem->intern_semaphore->timed_wait(waitTime);
 				break;
-			case semaphore::BSEMAPHORE:
+			case WINWORKS_SEMLIB_semaphore::BSEMAPHORE:
 				sem->intern_semaphore->timed_wait(waitTime);
 				break;
-			case semaphore::MUTEX:
+			case WINWORKS_SEMLIB_semaphore::MUTEX:
 				sem->intern_mutex->timed_lock(waitTime);
 				break;
 			}

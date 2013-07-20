@@ -24,7 +24,7 @@
 #define SEM_EVENTSEND_ERR_NOTIFY 0x10
 #define SEM_INTERRUPTIBLE        0x20
 
-struct semaphore {
+struct WINWORKS_SEMLIB_semaphore {
 	boost::interprocess::interprocess_semaphore* intern_semaphore;
 	boost::interprocess::interprocess_recursive_mutex* intern_mutex;
 
@@ -33,7 +33,7 @@ struct semaphore {
 	} type;
 };
 
-typedef semaphore* SEM_ID;
+typedef WINWORKS_SEMLIB_semaphore* SEM_ID;
 
 enum SEM_B_STATE
 {
