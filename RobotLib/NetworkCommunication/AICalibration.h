@@ -7,7 +7,10 @@ extern "C"
 {
 #endif
 
-	UINT32 FRC_NetworkCommunication_nAICalibration_getLSBWeight(const UINT32 aiSystemIndex, const UINT32 channel, INT32 *status) { return 0; }
+	UINT32 FRC_NetworkCommunication_nAICalibration_getLSBWeight(const UINT32 aiSystemIndex, const UINT32 channel, INT32 *status) 
+	{
+		return 0;
+	}
 	INT32 FRC_NetworkCommunication_nAICalibration_getOffset(const UINT32 aiSystemIndex, const UINT32 channel, INT32 *status) { return 0; }
 
 #ifdef __cplusplus

@@ -7,9 +7,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Playground", "Playground\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRCSimulator", "FRCSimulator\FRCSimulator\FRCSimulator.csproj", "{A05262A3-68AC-4C67-AED0-D8B51C19DAEE}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "FRCSimulatorContent", "FRCSimulator\FRCSimulatorContent\FRCSimulatorContent.contentproj", "{FFF1144C-7372-4CD8-A8AC-D5BEC73507F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRCSimulatorContent", "FRCSimulator\FRCSimulatorContent\FRCSimulatorContent.contentproj", "{FFF1144C-7372-4CD8-A8AC-D5BEC73507F7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestRobot", "TestRobot\TestRobot.vcxproj", "{6A2ADF39-8AE2-4E55-BBAD-C6EBA2B5A090}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinPILib", "WinPILib\WinPILib.vcxproj", "{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinWorks", "WinWorks\WinWorks.vcxproj", "{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinWorksTest", "WinWorksTest\WinWorksTest.vcxproj", "{8DA5F931-C694-45D9-B84D-6342B0739F85}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB} = {8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -71,6 +80,36 @@ Global
 		{6A2ADF39-8AE2-4E55-BBAD-C6EBA2B5A090}.Release|Win32.ActiveCfg = Release|Win32
 		{6A2ADF39-8AE2-4E55-BBAD-C6EBA2B5A090}.Release|Win32.Build.0 = Release|Win32
 		{6A2ADF39-8AE2-4E55-BBAD-C6EBA2B5A090}.Release|x86.ActiveCfg = Release|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Debug|Win32.Build.0 = Debug|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Debug|x86.ActiveCfg = Debug|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Release|Win32.ActiveCfg = Release|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Release|Win32.Build.0 = Release|Win32
+		{64BDFB76-BBA0-4DEB-A27C-727CEB1BBF8B}.Release|x86.ActiveCfg = Release|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Debug|Win32.Build.0 = Debug|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Debug|x86.ActiveCfg = Debug|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Release|Win32.ActiveCfg = Release|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Release|Win32.Build.0 = Release|Win32
+		{8FC18CF2-1C02-4BF5-AA00-463DAAC46ABB}.Release|x86.ActiveCfg = Release|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Debug|Win32.Build.0 = Debug|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Debug|x86.ActiveCfg = Debug|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Release|Win32.ActiveCfg = Release|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Release|Win32.Build.0 = Release|Win32
+		{8DA5F931-C694-45D9-B84D-6342B0739F85}.Release|x86.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

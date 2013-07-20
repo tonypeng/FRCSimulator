@@ -147,9 +147,6 @@
     <ClCompile Include="Utility.cpp" />
     <ClCompile Include="Watchdog.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="license-README.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -270,7 +270,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="license-README.txt" />
-  </ItemGroup>
 </Project>
