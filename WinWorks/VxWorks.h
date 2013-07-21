@@ -145,6 +145,9 @@ typedef int BOOL;
 #define DbgPrint(fmt, ...)
 #endif
 
+/* Has no effect.... */
+#define VX_FP_TASK (0x0008)
+
 #ifndef WINWORKS_NOT_IMPLEMENTED
 #define WINWORKS_NOT_IMPLEMENTED DbgPrint("[SEVERE] %s::%s (Line %d): Unimplemented function called!\n", __FILE__, BOOST_CURRENT_FUNCTION, __LINE__)
 #endif

@@ -41,7 +41,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\WinWorks\;C:\boost_1_54_0;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\WinWorks\;I:\boost_1_54_0;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -62,13 +62,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="Error.cpp" />
     <None Include="WinPILib.licenseheader" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h" />
+    <ClInclude Include="ChipObject\Nifpga.h" />
+    <ClInclude Include="WPIErrors.h" />
+    <ClInclude Include="nivision.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="ChipObject\NiRio.h" />
+    <ClInclude Include="ErrorBase.h" />
     <ClInclude Include="Synchronized.h" />
+    <ClInclude Include="Task.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ErrorBase.cpp" />
+    <ClCompile Include="Task.cpp" />
     <ClCompile Include="Synchronized.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="WinPILib.licenseheader" />
+    <None Include="Error.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h">
@@ -24,9 +25,36 @@
     <ClInclude Include="Synchronized.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\NiRio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipObject\Nifpga.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nivision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WPIErrors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synchronized.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
